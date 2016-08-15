@@ -1,0 +1,108 @@
+var doThis = [];
+
+function findOp() {
+  if(doThis[1] === '*'){
+    return doThis[0] * doThis[2]
+  } else if(doThis[1] === '+'){
+    return doThis[0] + doThis[2]
+  } else if(doThis[1] === '-'){
+    return doThis[0] - doThis[2]
+  } else if(doThis[1] === '/'){
+    return doThis[0] / doThis[2]
+  }
+}
+
+function one(oper){
+doThis.push(1);
+return oper
+if(doThis[2] === 1){
+  return findOp();
+}
+}
+
+function two(oper){
+doThis.push(2);
+return oper
+if(doThis[2] === 2){
+  return findOp();
+}
+}
+
+function three(oper){
+doThis.push(3);
+return oper
+if(doThis[2] === 3){
+  return findOp();
+}
+}
+
+function four(oper){
+doThis.push(4);
+return oper
+if(doThis[2] === 4){
+  return findOp();
+}
+}
+
+function five(oper){
+doThis.push(5);
+return oper
+if(doThis[2] === 5){
+  return findOp();
+}
+}
+
+function six(oper){
+doThis.push(6);
+return oper
+if(doThis[2] === 6){
+  return findOp();
+}
+}
+
+function seven(oper){
+doThis.push(7);
+  if(doThis[2] === 7){
+    return findOp();
+  }
+}
+
+function eight(oper){
+doThis.push(8);
+return oper
+if(doThis[2] === 8){
+  return findOp();
+}
+}
+
+function nine(oper){
+doThis.push(9);
+return oper
+if(doThis[2] === 9){
+  return findOp();
+}
+}
+
+function times(num){
+  doThis.push('*')
+  return num
+}
+function plus(num){
+  doThis.push('+')
+  return num
+}
+function minus(num){
+  doThis.push('-')
+  return num
+}
+function dividedBy(num){
+  doThis.push('/')
+  return num
+}
+
+
+six()
+times()
+seven()
+var show = five(times(seven()));
+console.log(show);
