@@ -24,7 +24,7 @@ function sumIntervals(intervals) {
 }
 
 
--Test Cases-
+// -Test Cases-
 sumIntervals( [
    [1,5],
    [10, 20],
