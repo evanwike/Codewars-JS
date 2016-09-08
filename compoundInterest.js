@@ -1,4 +1,4 @@
-function calculateYears(p, i, t, d) {
+function calculateYears(p, i, t, d) {       // (principal, interest, tax, desired)
   let years = 0;
   
   function compound(p, i, t, d) {
